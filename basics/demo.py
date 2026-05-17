@@ -84,7 +84,7 @@ sys.stdout = open("output.txt", "w")
 
 # print(a,b,c,d)
 
-from collections import namedtuple
+# from collections import namedtuple
 
 # point = namedtuple("nandan", ["first", "second"])
 # val = point(7,9)
@@ -96,9 +96,9 @@ from collections import namedtuple
 # val = test(4)
 # print(val)
 
-second = namedtuple("second", ['first', 'second'])
-val = second(6,9)
-first = namedtuple("first", ['first', 'second'])
-ans = first(2, val)
-print(ans.second.second)
+# second = namedtuple("second", ['first', 'second'])
+# val = second(6,9)
+# first = namedtuple("first", ['first', 'second'])
+# ans = first(2, val)
+# print(ans.second.second)
 
