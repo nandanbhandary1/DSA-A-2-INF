@@ -66,8 +66,6 @@ MAX HEAP
 # Original array
 arr = [7, 8, 2, 1, -16, 6]
 
-ans = []
-
 # Convert into max heap
 max_heap = [-item for item in arr] # NEGATE THE ELEMENTS
 
@@ -76,3 +74,4 @@ heapq.heapify(max_heap) # CONVERT THAT TO A MIN HEAP
 max_heapp = [-item for item in max_heap] # NEAGATE AGAIN AND DONE
 
 print(max_heapp)
+
