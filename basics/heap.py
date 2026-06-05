@@ -43,21 +43,21 @@ MIN HEAP
 """
 MAX HEAP
 """
-# max_heapp = [7, 8, 2, 1, -16, 6]
+max_heapp = [7, 8, 2, 1, -16, 6]
 
-# ans = []
+ans = []
 
-# for item in max_heapp:
-#     heapq.heappush(ans, -1 * item)
+for item in max_heapp:
+    heapq.heappush(ans, -1 * item)
 
-# max_heapp = [-item for item in ans]
+max_heapp = [-item for item in ans]
 
-# print(max_heapp)
+print(max_heapp)
 
-# heapq.heapify(-1 * max_heapp)
-# max_heapp = [-item for item in ans]
+heapq.heapify(-1 * max_heapp)
+max_heapp = [-item for item in ans]
 
-# print(max_heapp)
+print(max_heapp)
 
 
 """ 
