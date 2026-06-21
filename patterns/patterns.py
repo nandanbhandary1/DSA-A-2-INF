@@ -698,3 +698,36 @@ if __name__ == "__main__":
     sol = Solution()
     
     sol.pattern21(N)
+
+class Solution:
+    # Function to print pattern22
+    def pattern22(self, n):
+        # Outer loop for the rows
+        for i in range(2 * n - 1):
+            # Inner loop for the columns
+            for j in range(2 * n - 1):
+                
+                # Initialising distances from all four boundaries
+                top = i
+                left = j
+                right = (2 * n - 2) - j
+                bottom = (2 * n - 2) - i
+                
+                # Compute value based on minimum distance
+                value = n - min(min(top, bottom), min(left, right))
+                
+                print(value, end="")
+                if j < 2 * n - 2:
+                    print(" ", end="")
+
+            # Move to the next row
+            print()
+
+# Main function
+if __name__ == "__main__":
+    N = 5
+    
+    # Create an instance of Solution class
+    sol = Solution()
+    
+    sol.pattern22(N)
