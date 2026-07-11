@@ -54,3 +54,4 @@ if sorted:
     print("Array is sorted.")
 else:
     print("Array is not sorted.")
+    
